@@ -1,0 +1,72 @@
+/*config padrao css */
+:root{
+    --bg: #c76161;
+    --header-bg: #222;
+    --title-color: #ffea00;
+    --accent: #c76161;
+    --text: #333;
+}
+
+*{box-sizing: border-box; margin: 0;    padding: 0;}
+
+html,body{height: 100%}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--text);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*Header - titulo */
+
+h1{
+    width: 100%;
+    display: block;         /*garante comportamento de bloco e ocupa largura total */
+    background: var(--header-bg);
+    color: var(--title-color);
+    text-align: center;
+    font-size: 48px;
+    padding: 40px 0;   /*espaço dentro da faixa */
+    margin: 0;          /*sem margin entre header e ul */
+    border-bottom: 5px solid var(--accent);
+}
+
+/*container central */
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;       /*centraliza a ul horizontalmente */
+}
+
+/* lista principal: colunas, gap e posicionamento */
+.recipes{
+    list-style: disc;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    margin: 28px auto 0;
+    padding-left: 0;
+    font-size: 28px;
+    width: fit-content;
+}
+
+/* item da lista */
+
+.recipes li{
+    font-size: 32PX;
+    padding-left: 5PX;
+}
+
+.recipes a{color: inherit; text-decoration: underline;}
+
+.primeiro::marker{color: aqua; font-weight: 600;}
+.segundo::marker{color: blue;}
+.terceiro::marker{color: black;}
