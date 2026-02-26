@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style3.css">
+    <link rel="stylesheet" href="./style2.css">
     <title>Primeiro Projeto</title>
 </head>
+
 <body>
-    <h1>strognoff</h1>
-    <img src= "/home/filipe/Desktop/Odin/HTML/projeto/repos/odin-recipes/images/strogonoff.jpg" alt="strognoff" width="500" height="600">
-    <br>
-    <h2>Descrição</h2>
-        <p>Com sua textura tenra e suculenta, o filé mignon é o corte perfeito para o strogonoff, pois absorve bem o tempero e o molho.</p>
-        <p>De origem russa, essa receita conquistou o coração dos brasileiros, ainda mais servido com arroz branco soltinho e a batata palha.</p>
-    <h2>Ingredientes</h2>
-        <ul> 
-            <li>File Mignon</li>
-            <li>Creme de leite</li>
-            <li>arroz e batata palha</li>
-        </ul>
-    <h2>Preparo</h2>
-        <ol>
-            <li>coloque os ingredientes 1 encima do outro</li>
-            <li>jogue conhaque</li>
-            <li>coma</li>
-        </ol>
-</body>
-<footer>
-    <ul>
-        <li>   <a href="/home/filipe/Desktop/Odin/HTML/projeto/repos/odin-recipes/index.html">Home</a></li>
-        <li><a href="/home/filipe/Desktop/Odin/HTML/projeto/repos/odin-recipes/recipes/lasanha.html">Lasanha</a></li>
-        <li><a href="parmegiana.html">Parmegiana</a></li>
-    </ul>
- 
 
+  <div class="recipe-card" id="strogonoff-card">
+    
+    <h1 class="main-title">Strogonoff</h1>
 
-</footer>
+    <div class="image-box">
+      <img class="food-img" 
+           src="/home/filipe/Desktop/Odin/HTML/projeto/repos/odin-recipes/images/strogonoff.jpg" 
+           alt="Strogonoff">
+    </div>
+
+    <section class="section description">
+      <h2 class="section-title">Descrição</h2>
+      <p>
+        Com sua textura tenra e suculenta, o filé mignon é o corte perfeito para o strogonoff.
+      </p>
+    </section>
+
+    <section class="section ingredients">
+      <h2 class="section-title">Ingredientes</h2>
+      <ul class="list">
+        <li>Filé Mignon</li>
+        <li>Creme de leite</li>
+        <li>Arroz e batata palha</li>
+      </ul>
+    </section>
+
+    <section class="section preparo">
+      <h2 class="section-title">Preparo</h2>
+      <ol class="list ordered">
+        <li>Coloque os ingredientes</li>
+        <li>Frite o filé</li>
+        <li>Coma</li>
+      </ol>
+    </section>
+
+  </div>
+
+  <footer class="site-footer">
+    <a href="../index.html">Home</a>
+    <a href="lasanha.html">Lasanha</a>
+    <a href="parmegiana.html">Parmegiana</a>
+  </footer>
+
+    </body>
 </html> 
